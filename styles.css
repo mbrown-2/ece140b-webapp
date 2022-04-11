@@ -28,6 +28,8 @@ body {
     max-width: 50%;
     padding: 1rem 2rem;
     backdrop-filter: blur(10px);
+
+    width: 1000px;
 }
 
 .body-container-2 {
@@ -36,9 +38,13 @@ body {
     color: black;
     font-family: sans-serif;
     line-height: 1.5;
-    max-width: 50%;
+    max-width: 60%;
     padding: 1rem 2rem;
     backdrop-filter: blur(10px);
+    
+    float: right;
+    width: 1000px;
+
 }
 
 
