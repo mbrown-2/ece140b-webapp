@@ -1,12 +1,48 @@
+:root {
+    --primary-color: #07f;
+    --accent-color: rgba(231, 109, 90, 1);
+    --accent-color-dark: rgba(226, 77, 54, 1);
+    --accent-color: rgba(89, 110, 166, 1);
+    --accent-color-dark: rgba(71, 88, 133, 1);
+
+    /* Title tab container */
+    --dark-color: rgb(1, 2, 2);
+    --dark-color-alt: rgba(156, 160, 165, 1);
+    --medium-color: #bbb;
+    --light-color: #eee;
+    --page-color: #fafafa;
+    --soft-color: rgba(221, 214, 212, 1);
+    --margin-xxl: 3rem;
+    --margin-xl: 2rem;
+    --margin-lg: 1rem;
+    --margin-med: 0.66rem;
+    --margin-sm: 0.33rem;
+    --base-font-size: 16pt;
+    --border-radius: 6px;
+    --rounded-radius: 4rem;
+    --padding-xxl: 2rem;
+    --padding-xl: 1.4rem;
+    --padding-lg: 1rem;
+    --padding-med: 0.66rem;
+    --padding-sm: 0.33rem;
+    --font: Lato;
+  }
+  * {
+    box-sizing: border-box;
+  }
+
 body {
     background-image: url('/images/forest-image.jpg');
+    backdrop-filter: blur(1.5px);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
     opacity: 0;
     transition: opacity 3s;
 }
 
+/**
 .title-container {
     margin: auto;
     text-align: center;
@@ -15,11 +51,45 @@ body {
     border: 10px black;
     padding: 10%;
     border-radius: 15px;
+}
+**/
 
+.title-container {
+    background: var(--dark-color);
+    color: white;
+    padding: calc(1rem + 8vh) calc(1rem + 3vw) calc(3rem + 10vh) calc(1rem + 3vw);
+}
+.title-container h1 {
+    font-size: calc(1rem + 5vw);
+    background: none;
+    margin: 0px;
+}
+.title-container h3 {
+    margin: 0px 0rem;
+    color: #ccc;
 }
 
 
+
+
+
+
+
+
 .body-container-1 {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    color: black;
+    font-family: sans-serif;
+    line-height: 1.5;
+    max-width: 50%;
+    padding: 1rem 2rem;
+    backdrop-filter: blur(15px);
+
+    width: 1000px;
+}
+
+.body-container-2 {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 15px;
     color: black;
@@ -59,8 +129,25 @@ body {
 }
 */
 .horizontal-line {
-    opacity: .5;
-}
+    font-size: calc(1rem + 1vw);
+    color: var(--dark-color);
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    margin: calc(2rem + 3vw) auto;
+  }
+  .horizontal-line::before, .horizontal-line::after {
+    content: "";
+    flex: 1;
+    border-bottom: 3px solid var(--dark-color);
+  }
+  .horizontal-line::before {
+    margin-right: 1rem;
+  }
+  .horizontal-line::after {
+    margin-left: 1rem;
+  }
 
 #slide-1 {
     opacity: .7;

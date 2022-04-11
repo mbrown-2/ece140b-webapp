@@ -18,10 +18,9 @@ db_user = os.environ['MYSQL_USER']
 db_pass = os.environ['MYSQL_PASSWORD']
 db_name = os.environ['MYSQL_DATABASE']
 
-def example_func(req):
-    return
 
 def index_page(req):
+    # Connect to the database and retrieve the users
     return FileResponse('index.html')
 
 if __name__ == '__main__':
@@ -30,8 +29,6 @@ if __name__ == '__main__':
         config.add_route('home', '/')
         config.add_view(index_page, route_name='home')
 
-        config.add_route('example', '/example/{example_id}')
-        config.add_view(example_func, route_name='example', renderer='json')
 
         config.add_static_view(name='/', path='./public', cache_max_age=3600)
 
