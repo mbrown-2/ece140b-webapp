@@ -182,10 +182,10 @@ table tr:nth-child(even) {
     color: white;
     font-family: sans-serif;
     line-height: 1.5;
-    max-width: 50%;
+    max-width: 100%;
     padding: 1rem 2rem;
     backdrop-filter: blur(15px);
-
+    margin: auto;
     width: 1000px;
 }
 
@@ -234,6 +234,12 @@ body {
     margin-top: -30px;
 }
 
-/* Font list: Quicksand, Vazirmatn  */
-/* In the following: sans-serif */
+mark {
+    background-color: rgba(3, 3, 3, 0.801);
+    backdrop-filter: blur(15px);
+    color: white;
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
