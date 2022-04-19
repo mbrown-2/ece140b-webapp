@@ -36,6 +36,9 @@ html {
     margin-right: auto;
     width: 95%;
 }
+.row > h1 {
+    color: #4ce668;
+}
 
 .flex-container-vertical {
     font-family: sans-serif;
