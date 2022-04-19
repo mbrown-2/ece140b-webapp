@@ -1,0 +1,83 @@
+html {
+    scroll-behavior: smooth !important;
+}
+
+.flex-container-horizontal {
+    background-color: rgba(3, 3, 3, 0.801);
+    border-radius: 15px;
+    color: white;
+    font-family: sans-serif;
+    line-height: 1.5;
+    
+    padding: 1rem 2rem;
+    backdrop-filter: blur(15px);
+    margin: auto;
+
+    margin: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-container-horizontal > a {
+    width: 100%;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    background-color: rgba(3, 3, 3, 0.801);
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.flex-container-vertical {
+    font-family: sans-serif;
+    line-height: 1.5;
+    
+    padding: 1rem 2rem;
+    backdrop-filter: blur(15px);
+
+    margin: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+
+    flex-direction: row;
+}
+.flex-container-vertical > div {
+    width: 100%;
+    text-align: center;
+}
+
+.flexbox-description {
+    margin: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    background-color: rgba(3, 3, 3, 0.801);
+    border-radius: 15px;
+
+    padding: 20px;
+}
+.flexbox-description > .flex-p {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.product-column {
+    
+
+}
+
+.feature-list {
+
+}

@@ -23,11 +23,17 @@ def index_page(req):
     # Connect to the database and retrieve the users
     return FileResponse('index.html')
 
+def product_page(req):
+    return FileResponse('product-page.html')
+
 if __name__ == '__main__':
     with Configurator() as config:
 
         config.add_route('home', '/')
         config.add_view(index_page, route_name='home')
+
+        config.add_route('product_page', '/home/')
+        config.add_view(product_page, route_name='product_page')
 
 
         config.add_static_view(name='/', path='./public', cache_max_age=3600)

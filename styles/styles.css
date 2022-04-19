@@ -37,6 +37,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 
     opacity: 0;
     transition: opacity 3s;
@@ -174,7 +175,6 @@ table tr:nth-child(odd) {
 table tr:nth-child(even) {
     background-color: var(--light-color);
 }
-
 
 .body-container-3 {
     background-color: rgba(3, 3, 3, 0.801);

@@ -3,61 +3,70 @@
 <html>
     <head>
       <meta charset="utf-8">
-      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="styles/styles.css">
+      <link rel="stylesheet" href="styles/flexbox.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
       <!-- List of Google font imports -->
       <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Vazirmatn:wght@200&display=swap" rel="stylesheet">
-      <title>PlantPal</title>
+      <title id="Title">PlantPal</title>
     </head>
 
     <body onload="document.body.style.opacity='1'">
 
       <div class="title-container">
-        <h1 id="title">PlantPal</h1>
+        <h1>PlantPal</h1>
         <h3 id="subtitle">The Helping Hand with a <font color=#4ce668>'Green Thumb'</font></h3>
       </div>
 
-      <div class="horizontal-line"><mark>Slideshow</mark></div>
-        <div class="slideshow-container">
-          <div class="w3-content" style="max-width:700px">
-            <img class="mySlides" src="/images/slideshow/image-test1.jpg" style="width:100%;display:none">
-            <img class="mySlides" src="/images/slideshow/image-test2.jpg" style="width:100%">
-            <img class="mySlides" src="/images/slideshow/image-test3.jpg" style="width:100%;display:none">
-            <img class="mySlides" src="/images/slideshow/image-test4.jpg" style="width:100%;display:none">
-            <img class="mySlides" src="/images/slideshow/image-test5.jpg" style="width:100%;display:none">
-        
-            <div class="select-photo">
-              <div class="img-selector">
-                <img class="demo w3-opacity w3-hover-opacity-off" src="/images/slideshow/image-test1.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
-              </div>
-              <div class="img-selector">
-                <img class="demo w3-opacity w3-hover-opacity-off" src="/images/slideshow/image-test2.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
-              </div>
-              <div class="img-selector">
-                <img class="demo w3-opacity w3-hover-opacity-off" src="/images/slideshow/image-test3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
-              </div>
-              <div class="img-selector">
-                <img class="demo w3-opacity w3-hover-opacity-off" src="/images/slideshow/image-test4.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
-              </div>
-              <div class="img-selector">
-                <img class="demo w3-opacity w3-hover-opacity-off" src="/images/slideshow/image-test5.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(5)">
-              </div>
-            </div>
-          </div>
-          <p><u>Pleae take note!</u> This opening slideshow is in its "skeleton phase!" In other words, 
-            these stock images are temporary and will be populated/replaced with images of our product in 
-            the works as time progresses throughout this quarter.</p>
-        </div>
+      <div class="flex-container-horizontal">
+        <a href="#Overview">Overview</a>
+        <a href="#Logistics">Logistics</a>
+        <a href="#Wk3">Product Details</a>
+        <a href="#Next">Next Steps...</a>
       </div>
 
-      <div class="horizontal-line"><mark>Product Vision</mark></div>
+      <div class="horizontal-line"><mark>Slideshow</mark></div>
+      <div class="slideshow-container">
+        <div class="w3-content" style="max-width:700px">
+          <img class="mySlides" src="/images/slideshow/image-test1.jpg" style="width:100%;display:none">
+          <img class="mySlides" src="/images/slideshow/image-test2.jpg" style="width:100%">
+          <img class="mySlides" src="/images/slideshow/image-test3.jpg" style="width:100%;display:none">
+          <img class="mySlides" src="/images/slideshow/image-test4.jpg" style="width:100%;display:none">
+          <img class="mySlides" src="/images/slideshow/image-test5.jpg" style="width:100%;display:none">
+        
+          <div class="select-photo">
+            <div class="img-selector">
+              <img class="demo w3-opacity w3-hover-opacity-off" src="/images/slideshow/image-test1.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+            </div>
+            <div class="img-selector">
+              <img class="demo w3-opacity w3-hover-opacity-off" src="/images/slideshow/image-test2.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+            </div>
+            <div class="img-selector">
+              <img class="demo w3-opacity w3-hover-opacity-off" src="/images/slideshow/image-test3.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+            </div>
+            <div class="img-selector">
+              <img class="demo w3-opacity w3-hover-opacity-off" src="/images/slideshow/image-test4.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+            </div>
+            <div class="img-selector">
+              <img class="demo w3-opacity w3-hover-opacity-off" src="/images/slideshow/image-test5.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(5)">
+            </div>
+          </div>
+        </div>
+        <p><u>Pleae take note!</u> This opening slideshow is in its "skeleton phase!" In other words, 
+            these stock images are temporary and will be populated/replaced with images of our product in 
+            the works as time progresses throughout this quarter.
+        </p>
+      </div>
+      
+
+      <div class="horizontal-line" id="Overview"><mark>Product Vision</mark></div>
 
       <div class="body-container-1">
         <div class="text-box">
-          <h2>What is our product?</h2>
+          <h2>Welcome!</h2>
 
            <p>PlantPal is the solution to your plant-caretaking woes. Our product consists of a packaged set of small meters that are inserted
             in the soil near the base of plants that you wish to track. These meters come with pre-installed batteries as well as mini solar panels
@@ -104,7 +113,7 @@
         </div>
       </div>
 
-      <div class="horizontal-line"><mark>Teammate Logistics</mark></div>
+      <div class="horizontal-line" id="Logistics"><mark>Teammate Logistics</mark></div>
 
       <table class='margin-top-xl'>
         <thead>
@@ -143,7 +152,71 @@
         </tbody>
       </table>
 
-      <div class="horizontal-line"><mark>Extras and Future Todos!</mark></div>
+
+      <div class="horizontal-line" id="Wk3"><mark>Week 3 - Product Details and KVP</mark></div>
+      <div class="row">
+        <div class="product-column">
+          <h1>Product Details</h1>
+
+          <h4>The goal of our team is to create and introduce a product that will minimize the stress of
+            plant-caretaking and help users improve their gardening awareness. PlantPal is a device two
+            key integrations: <u>a hardware and software side of things</u>.
+          </h4>
+
+          <div class="flexbox-description">
+            <p class="flex-p">
+              <b>The Hardware:</b> Each meter of our PlantPal package comes with a central raspberry pi
+              device (all tucked within a protective shell/case) and an extending meter. This meter sticks 
+              into the soil of a nearby plant and periodically obtains data. This data includes measurements 
+              of important factors such as <b>soil moisture, temperature, and humidity</b>. Every 30 minutes,
+              data is forwarded via wifi to a remote server that will collect and store our data in an SQL database.
+            </p>
+            <p class="flex-p">
+              <b>The software:</b> The data is aimed to be hosted on Microsoft Azure for security and reliability.
+              As data is collected, a user will be able to check on this information via an iOS application on their
+              mobile device. This app will retrieve data and display information in a clean and graphical layout.
+              Some implementations you can expect are charts that visually describe a plant's conditions over time
+              and custom settings that allow you to describe the breed and dimensions of the plants you are 
+              taking care of.
+            </p>
+          </div>
+
+
+          <h1>Is this product for me?</h1>
+
+          <p>As long as you own a mobile device, some plants that need watering, and a passion for keeping them
+            healthy, PlantPal will be perfect for you. However, if one is still on-edge of giving the product
+            more thought, consider the following. 
+
+          </p>
+
+          <p>
+            an extended meter that sticks into the soil of a nearby plant and periodically obtains data.
+            This data includes measurements of important factors such as <b>soil moisture, temperature,
+            and humidity</b>. All of this information will then be stored within a central database; as of now,
+            our team believes that <b>Microsoft Azure</b> will serve as a perfect and secure platform to host
+            our product's needs. Hence, the contents of this database will be retrieved by our iOS app 
+          </p>
+
+          <h1>What will I get out of using PlantPal?</h1>
+          
+
+        </div>
+
+        <div class="feature-list">
+          <div class="flex-container-vertical">
+            <div>first idea</div>
+            <div>second idea</div>
+            <div>and so forth...</div>
+          </div>
+        </div>
+
+        <h1>Our Key Value Proposition</h1>
+      </div>
+
+
+
+      <div class="horizontal-line" id="Next"><mark>Extras and Future Todos!</mark></div>
 
       <div class="body-container-3">
         <ul>
@@ -156,8 +229,9 @@
           <li>mySQL skeleton prepped. Populate with tables when/if needed.</li>
           <li>Have some fun!</li>
         </ul>
-
       </div>
+
+      
 
 
         <script type="text/javascript" src="rest.js"></script>

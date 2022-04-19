@@ -17,3 +17,26 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " w3-opacity-off";
 }
+
+
+// Assignment 2 pages
+function productPage_load() {
+  alert('hey there');
+  let pageID='/product_page/';
+
+  print("made it here");
+
+  fetch(pageID)
+    .then(function(response) {
+      print("working");
+    }
+  )
+}
+
+function mainPage_load() {
+  fetch('/')
+    .then(function(response) {
+      print("working");
+    }
+  )
+}
