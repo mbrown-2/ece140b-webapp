@@ -249,6 +249,10 @@ table tr:nth-child(even) {
     width: 1000px;
 }
 
+.product-column > h1 {
+    color: #4ce668;
+}
+
 a:link {
     color: white;
 }
