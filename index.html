@@ -16,30 +16,32 @@
 
     <body onload="document.body.style.opacity='1'">
 
-      <div class="title-container">
-        <h1>PlantPal</h1>
-        <h3 id="subtitle">The Helping Hand with a <font color=#4ce668>'Green Thumb'</font></h3>
+      <div class="header-background">
+        <div class="title-container">
+          <h1 id="PlantPal-title">PlantPal</h1>
+          <h3 id="subtitle">The Helping Hand with a <font color=#4ce668>'Green Thumb'</font></h3>
+          <br>
+          <div class="flex-container-horizontal">
+            <a href="#Overview">Overview</a>
+            <a href="#Logistics">Logistics</a>
+            <a href="#Wk3">Product Details</a>
+            <a href="#Next">Next Steps...</a>
+          </div>
+        </div>
+        
       </div>
 
-      <div class="flex-container-horizontal">
-        <a href="#Overview">Overview</a>
-        <a href="#Logistics">Logistics</a>
-        <a href="#Wk3">Product Details</a>
-        <a href="#Next">Next Steps...</a>
-      </div>
-
-      <div class="horizontal-line"><mark>Slideshow</mark></div>
       <div class="slideshow-container">
         <div class="w3-content" style="max-width:700px">
-          <img class="mySlides" src="/images/slideshow/image-test1.jpg" style="width:100%;display:none">
-          <img class="mySlides" src="/images/slideshow/image-test2.jpg" style="width:100%">
+          <img class="mySlides" src="/images/progress-1.PNG" style="width:100%">
+          <img class="mySlides" src="/images/slideshow/image-test2.jpg" style="width:100%;display:none">
           <img class="mySlides" src="/images/slideshow/image-test3.jpg" style="width:100%;display:none">
           <img class="mySlides" src="/images/slideshow/image-test4.jpg" style="width:100%;display:none">
           <img class="mySlides" src="/images/slideshow/image-test5.jpg" style="width:100%;display:none">
         
           <div class="select-photo">
             <div class="img-selector">
-              <img class="demo w3-opacity w3-hover-opacity-off" src="/images/slideshow/image-test1.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+              <img class="demo w3-opacity w3-hover-opacity-off" src="/images/progress-1.PNG" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
             </div>
             <div class="img-selector">
               <img class="demo w3-opacity w3-hover-opacity-off" src="/images/slideshow/image-test2.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
@@ -59,7 +61,35 @@
             these stock images are temporary and will be populated/replaced with images of our product in 
             the works as time progresses throughout this quarter.
         </p>
+
+        <p>
+          First image: Bluetooth capability is indeed possible! We are able to power on our ESP32-C3 kit and remotely switch on/off an LED
+          light via a mini SwiftUI implementation.
+        </p>
       </div>
+
+      <div class="horizontal-line" id="Wk3"><mark>Week 3 - Product Details and KVP</mark></div>
+
+      <div class="opening-container">
+      <div class="opening-container">
+        <h1>Is your garden not as green as it once was?
+        </h1>
+
+        <div class="opening-interior">
+          <p><i>
+            Did I water my plants one too few or many times this past week? Perhaps, could the soil
+            itself lack the absorbancy? Or otherwise, could the atmosphere not be the right temperature?
+          </p></i>
+        </div>
+      </div>
+
+      <div class="opening-container">
+        <h1>adskjf;adsfj;lka</h1>
+        <div class="opening-interior">
+          <p>dakj;ff</p>
+        </div>
+      </div>
+    </div>
       
 
       <div class="horizontal-line" id="Overview"><mark>Product Vision</mark></div>
@@ -256,6 +286,35 @@
 
       </div>
 
+      <div class="horizontal-line" id="Next"><mark>Week 4 Update - "Usability" and Empathy Map</mark></div>
+
+      <div class="zoom">
+        <img src="/images/board-progress.PNG">
+      </div>
+
+      <div class="ux-container">
+        <p>
+          <b>Minimizing Viscosity -</b> The "Slideshow" header was orignally front and center on the screen when the site
+          would first load. I decided to remove this header, provide a bit of padding, and incorporate my first
+          slideshow image into the view. It's usually easier for users to focus on images rather than text. As for the
+          future, I hope to have an image of our final product as the landing image so that users have an immediate
+          grasp of what our team's product is.
+        </p>
+        <p>
+          <b>Principle of Visibility -</b> The positioning of the tab feature at the top of the screen felt a bit
+          jarring in terms of its original appearance. At first, this horizontal bar was detached from all of the
+          surrounding divs. As a result, I grouped it with the title pane to provide a sense of hierarchy to the buttons.
+          Additionally, the overlap of the buttons and gray pane made the button contrast more clearly.
+        </p>
+        <p>
+          <b>Secondary Notion -</b> In continuation to the improvements of the previous topic, additional headers
+          and other sub-title sections were altered/adjusted for greater clarity. More importantly, the ordering
+          of sections/pages of this website are meant to encourage a flow of thought (from empathy of problem to
+          the consideration of a solution to our product and its promises... etc.)
+        </p>
+      </div>
+
+      
 
 
       <div class="horizontal-line" id="Next"><mark>Extras and Future Todos!</mark></div>
@@ -273,7 +332,8 @@
         </ul>
       </div>
 
+      <a href="#PlantPal-title" id="back-to-top">Back to Top</button>
 
-        <script type="text/javascript" src="rest.js"></script>
+      <script type="text/javascript" src="rest.js"></script>
     </body>
 </html>

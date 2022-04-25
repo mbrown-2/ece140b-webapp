@@ -4,7 +4,7 @@ html {
 
 .flex-container-horizontal {
     background-color: rgba(3, 3, 3, 0.801);
-    border-radius: 15px;
+    border-radius: 150px;
     color: white;
     font-family: sans-serif;
     line-height: 1.5;
@@ -16,6 +16,10 @@ html {
     margin: 15px;
     display: flex;
     flex-wrap: nowrap;
+
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: white;
 }
 
 .flex-container-horizontal > a {
