@@ -26,6 +26,8 @@
 .ui-child > img {
     padding: 15px;
     text-align: center;
+    width: 100%;
+    height: 20%;
 }
 .ui-child > p {
    padding: 20px;
