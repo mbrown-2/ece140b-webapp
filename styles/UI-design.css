@@ -1,0 +1,32 @@
+.ui-container {
+    background-color: rgba(3, 3, 3, 0.801);
+    border-radius: 15px;
+
+    margin: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    
+
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+.ui-child {
+    color: rgb(255, 255, 255);
+    background-color: rgba(3, 3, 3, 0.801);
+    border-radius: 15px;
+    margin: 10px;
+}
+.ui-child > h2 {
+    color: #4ce668;
+    text-align: center;
+}
+.ui-child > img {
+    padding: 15px;
+    text-align: center;
+}
+.ui-child > p {
+   padding: 20px;
+}
