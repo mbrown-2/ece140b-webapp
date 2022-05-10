@@ -6,6 +6,7 @@
       <link rel="stylesheet" href="styles/styles.css">
       <link rel="stylesheet" href="styles/flexbox.css">
       <link rel="stylesheet" href="styles/UI-design.css">
+      <link rel="stylesheet" href="styles/sidebar.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -25,7 +26,7 @@
           <div class="flex-container-horizontal">
             <a href="#Overview">About</a>
             <a href="#Logistics">Logistics</a>
-            <a href="#Wk. 5 Update">Wk. 5</a>
+            <a href="#Wk. 6 Update">Latest (Wk. 6)</a>
             <a href="#Next">WIPs...</a>
           </div>
         </div>
@@ -303,7 +304,7 @@
           </p>
         </div>
         <div class="ui-child">
-          <img src="/images/law-of-proximity-example.PNG">
+          <img id="proximity-img" src="/images/law-of-proximity-example.PNG">
           <h2>Law of Proximity</h2>
           <p>
             As an example, we can consider the sections I organized on this website. At first glance, this idea wouldn’t 
@@ -323,6 +324,63 @@
             as programmers. The design of the keyboard is organized and grouped in the exact same layout across all versions. 
             As users, we want and expect these systems to output the exact letter or symbol that we physically press. 
             Otherwise, its implementation would be contradictory.
+          </p>
+        </div>
+      </div>
+
+      <div class="horizontal-line" id="Wk. 6 Update"><mark>Wk. 6 - Product I.A.</mark></div>
+      <div class="ui-container">
+        <div class="ui-child">
+          <h2>User's First Interaction</h2>
+          <p>
+            As described in previous sections, the deliverable of this product will come in two parts: 
+            hardware (the set of meters) and software (the paired app on iOS). For a user's first interaction,
+            they will need to know how to place the meters into soil. This should be extremely easy as one must simply 
+            push the spiked end of the meter into the ground and press its 'on' button to activate it.
+          </p>
+          <p>
+            On the other hand, we expect a user to feel comfortable with basic navigation of PlantPal's paired app as long
+            as the user has interacted with basic phone applications before. One simply needs to open the app as they will
+            then be greeted with a vertical navigation view of a list of paired meters. Each entry can be pressed to view the details
+            of the plants they measure respectively.
+          </p>
+          <p>
+            The only possible difficulty one might face is the matter of pairing the meters to the device. As of now, our team
+            speculates (and has proven) Bluetooth capability. In this scenario, users will have to access their settings to select 
+            the meters individually. Hopefully, we will be able to find a way to implement an automated feature through the app itself
+            if time permits.
+          </p>
+        </div>
+        <div class="ui-child">
+          <h2>I.A. Design Principles</h2>
+          <p>
+            <u>Principle of Objects:</u> Every meter is paired with at least a single plant. Our team views the presence of our product's hardware
+            as physical companions that watch over their live counterparts. A meter's role, in a sense, is to babysit a plant and provide necessary 
+            health updates to the users they assist. Through the app, each  meter can show attributes of data (ie. moisture, temperature, and graphical comparisons).
+          </p>
+          <p>
+            <u>Principle of Focused Navigation:</u> In order to sort the content of our product's software, the iOS app will feature a simple
+            tab-row at the bottom of the screen. As of now, we are focused on implementing three tabs: 'Overview', 'My Meters,' and 
+            'Settings.' Each of these tabs should be self explanatory and contain data that is relevant to the tab's title they are sorted under.
+            The 'Overview' will provide general summaries of a user's stats and notifications of current weather activity. The meters 
+            tab will feature a vertical list of paired meters while the settings tab will contain accessibility options, pairing features, and more.
+          </p>
+        </div>
+        <div class="ui-child">
+          <h2>Structural Principles</h2>
+          <p>
+            <u>Sequential Navigation:</u> So far, we've discussed our team's goals and working progress in the product's app implementation. Since we are 
+            focused on applying a tab-view and vertical navigation-view, we expect the app to function in a sequential pattern. For example: let's say the 
+            user seeks to view the tracked data of their PlantPal meter that is measuring a pot of sunflowers. A user will open the app and select the 
+            'My Meters' tab to view their list of meters. They will then scroll through the list of names and select the meter that is measuring the said plant. 
+            Performing this action will transition the screen to a 'Details' page that presents data. In addition, we should mention that the user can also select the name 
+            of the meter in this Details page and edit the title so that it is more descriptive (hence why we assume in this example that the meter's name is something 
+            that describes the sunflower pot and is therefore recognizable from the user's perspective). 
+          </p>
+          <p>
+            <u>Chronological:</u> We should also mention once again that our 'Details' page will feature an organized list of data and other recorded information. Given that 
+            our meters measure plants periodically, the data must be stored chronologically. This is especially prevalent for our team's goal to implement a graphical view 
+            (ie. a line graph that extends left to right over a course of time). This will help visualize a plant's rate of health as time goes on.
           </p>
         </div>
       </div>
@@ -368,7 +426,7 @@
       </table>
 
       <div class="weekly-container">
-        <h1>Weekly Sprint Updates</h1>
+        <h1>Weekly Sprint Summaries (High-level)</h1>
         <ul>
           <b>Week 2</b>
           <ul>
@@ -410,6 +468,16 @@
           <ul>
             <li>Wireframing ongoing</li>
             <li>SwiftUI Storyboarding begins</li>
+            <li>Weekly videos submitted</li>
+          </ul>
+        </ul>
+        <ul>
+          <b>Week 7 - Upcoming</b>
+          <ul>
+            <li>Team Debrief</li>
+            <li>Storyboarding finalizations</li>
+            <li>Hardware orders made</li>
+            <li>PlantPal "Dome" attachment in full swing</li>
             <li>Weekly video submissions WIP</li>
           </ul>
         </ul>
