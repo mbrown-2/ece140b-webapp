@@ -20,6 +20,8 @@ html {
     border-width: 1.5px;
     border-style: solid;
     border-color: white;
+
+    box-shadow: 0 0 7px 3px rgba(75, 236, 54, 0.808);
 }
 
 .flex-container-horizontal > a {

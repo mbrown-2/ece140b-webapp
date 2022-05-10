@@ -111,7 +111,7 @@ body {
 .w3-content {
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto;    
 }
 .mySlides {
     padding-top: 15px;
@@ -136,6 +136,10 @@ img {
     display: flex;
     padding-left: 5px;
     padding-right: 5px;
+
+    box-shadow: 0 -5px 3px -3px rgba(255, 255, 255, 0), 0 5px 3px -3px rgba(75, 236, 54, 0.808);
+
+    /* box-shadow: 0 0 1px 1px rgba(75, 236, 54, 0.808); */
 }
 
 .product-vision-container {
