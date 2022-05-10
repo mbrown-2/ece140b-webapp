@@ -81,22 +81,6 @@ html {
     padding: 15px;
 }
 
-.flexbox-interviewee-responses {
-    margin: 15px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.flexbox-interviewee-responses > p {
-    background-color: rgba(3, 3, 3, 0.801);
-    border-radius: 15px;
-    padding: 10px;
-    margin: 5px;
-}
-
 #KVP > li {
     margin-bottom: 15px;
 }
