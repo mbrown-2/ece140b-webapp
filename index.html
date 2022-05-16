@@ -27,7 +27,7 @@
           <div class="flex-container-horizontal">
             <a href="#Overview">About</a>
             <a href="#Logistics">Logistics</a>
-            <a href="#Wk. 6 Update">Latest (Wk. 6)</a>
+            <a href="#Wk. 7 Update">Latest (Wk. 7)</a>
             <a href="#Next">WIPs...</a>
           </div>
         </div>
@@ -393,6 +393,108 @@
         </div>
       </div>
 
+      <div class="horizontal-line" id="Wk. 7 Update"><mark>Wk. 7 - Interaction Design</mark></div>
+      <div class="row">
+        <div class="product-column">
+          <h1>Features vs. Benefits</h1>
+          <p>
+            Earlier this week, our team launched a second round of questionnaires to query user interests and see what remained the same or not. The goal was not only to re-evaluate 
+            users' desires for our MVP, but also to obtain quick feedback for our current hardware and software design pitches. Hence, we compiled our 10+ responses and narrowed down the
+            top 5 benefits that users seek from our product. From this, we will describe how our MVP aims to provide these benefits via its implemented features.
+          </p>
+
+          <hr>
+
+          <div class="flexbox-interviewee-responses">
+            <p>
+              <u>Application design hierarchy</u> - A series of visual cues and an obvious relationship between pages/tabs for obvious
+            </p>
+          </div>
+          <p>
+            The MVP of our product's application will focus on a single, scrollable list of meters. Since we are using SwiftUI as our platform of 
+            development, we are representing the list via a navigation view where each entry is a navigation link to a Details page. In other words,
+            a user can press/interact with any element of the list to jump between pages. SwiftUI is famous for its simplistic animations, in which the
+            platform will help provide a scrolling animation between pages so that a user can visually follow the hierarchy of the app. Each element/meter 
+            in the list will also have an arrow icon to indicate that pressing it will take the user to a different part of the app. 
+          </p>
+          <div class="flexbox-interviewee-responses">
+            <p>
+              <u>Visual simplicity</u> - A combination of minimal information being present on-screen and a palette of vibrant colors to catch the eye
+            </p>
+          </div>
+          <p>
+            This next benefit that interviewees request is directly linked with the first benefit we described. In order to accomplish this need, our app's 
+            design philosophy is functionality over appearance. This visual feature might sound detrimental, however it will help minimize user confusion when 
+            navigating the app. As of now, the color palette of our MVP is white and gray with black text. We will eventually choose to integrate a different background 
+            and/or theme (perhaps a blurred image or static color-background). However this decision is entirely dependent upon the amount of data and information 
+            we believe is sufficient for the user to be aware of when analyzing their plants' health. If the data we require is very numerous, we will minimize the 
+            UI design even further to prevent a visual overload.
+          </p>
+          <div class="flexbox-interviewee-responses">
+            <p>
+              <u>Cost-efficiency</u> - An overall product design that will not leave a dent in users' wallets
+            </p>
+          </div>
+          <p>
+            This next user benefit is tackled by the design features of our product's meters. Originally, our MVP seeked a solar-panel implementation so that each 
+            meter would be self-sufficient and not require charging by the user. However, due to time and price restraints, the idea was swapped with a rechargeable 
+            18350 battery. Each meter will come with an installed battery and the upper-portion of the meter will feature a snap-on case to shield both the battery and
+            other internals from its surroundings. As a result, the costs for developing each meter is slashed; in turn, the product's price won't be too high and the 
+            battery can be easily recharged/replaced in comparison to the costs of damaging a solar panel.
+          </p>
+          <div class="flexbox-interviewee-responses">
+            <p>
+              <u>Minimal tables of data</u> - A simple summary of a plant's basic stats rather than a series of confusing, in-depth graphs
+            </p>
+          </div>
+          <p>
+            In order to further preserve the simplicity of our application, the Details page of each meter will feature one graph or several. The final number is currently up 
+            for debate as the number of graphs depends on practicality from the user's perspective. However, this feature will have a solution for either 
+            decision. If we desire a single graph, the feature will hence be self-explanatory. The Details page will contain a series of bulleted data with the graph 
+            positioned beneath. If we desire multiple, we will choose to preserve the same design standard for each graph (ie. each graph is a line graph so that 
+            a degree of visual uniformity is maintained). The Details page is also scrollable, meaning that all of the information will not have to be crunched into a
+            single static-view.
+          </p>
+          <div class="flexbox-interviewee-responses">
+            <p>
+              <u>Minimal setup</u> - Setting up the meters and pairing the devices to the app should be a seamless activity
+            </p>
+          </div>
+          <p>
+            The meters will have an on-button that the user will simply need to switch on once. After this, the user will open the app and select the "+" icon in 
+            navigation view page. This will open a bluetooth pop-up to pair the device with each meter (either via Bluetooth or over Wi-Fi as testing confirms the
+            best route for our implementation). The goal of this feature is to ensure a "one-and-done" philosophy so that a user will not have to worry about 
+            re-pairing their meters with the app as they continue to interact with the product.
+          </p>
+        </div>
+        <hr>
+        <h1>Product Interactions</h1>
+          <p>
+            This section will function as a summary of the types of interactions that a user can engage with in relationship to the features we described above.
+          </p>
+          <h4>Hardware-Side</h4>
+          <p>
+            Once again, we recognize PlantPal as a product with a hardware and software side-of-things. The hardware consists of the series of meters that a user
+            decides to purchase. The interactions required for dealing with this product are straight-forward. One must simply check their plants or garden and select 
+            the appropriate locations they believe are practical for inserting their meters at. Each meter will come with a battery; if one must either swap the batteries 
+            or exchange the dome-covering of a meter, one must lift the snap-on dome to access the battery or exchange the dome itself.
+          </p>
+          <h4>Software-Side</h4>
+          <p>
+            The application is where we expect our user to spend 99% of their time in the grand-scheme of things. A user will use the app to accomplish three main 
+            actions: pairing a meter, viewing its data, and editing a meter's details. The user lands on a center page that is reserved to show the list of paired 
+            meters that are organized in a scrollable column. The top of the page features a "+" icon that a user selects. This will prompt the app to search for 
+            a new meter via Bluetooth (or Wi-Fi, depending on how our finishing tests pan out). A list of unpaired meters will appear and a user can simply tap the 
+            device they seek so that it is paired. This will then populate the list with the said meter.
+          </p>
+          <p>
+            Over time, data is collected. When a user wishes to view the details of what a meter has recorded, they will press the meter on the column which will open 
+            a Details page. This section will also be scrollable as it will provide a summary of all relevant data. If a user wishes to edit the meter's name or un-pair it,
+            they will be able to select an "Edit" button/icon at the top right of the page. Otherwise, they can select a "back" button at the top left to navigate backward to 
+            the list of meters.
+          </p>
+      </div>
+
 
       <div class="horizontal-line" id="Logistics"><mark>Logistics & Weekly Summaries</mark></div>
 
@@ -428,7 +530,7 @@
             <td> Jerome </td>
             <td> Lam </td>
             <td> j2lam@ucsd.edu </td>
-            <td> Hardware </td>
+            <td> Software </td>
           </tr>
         </tbody>
       </table>
@@ -480,13 +582,23 @@
           </ul>
         </ul>
         <ul>
-          <b>Week 7 - Upcoming</b>
+          <b>Week 7</b>
           <ul>
             <li>Team Debrief</li>
             <li>Storyboarding finalizations</li>
             <li>Hardware orders made</li>
             <li>PlantPal "Dome" attachment in full swing</li>
             <li>Weekly video submissions WIP</li>
+          </ul>
+        </ul>
+        <ul>
+          <b>Week 8 - Upcoming</b>
+          <ul>
+            <li>SwiftUI skeleton development</li>
+            <li>Hardware parts ordered/en-route</li>
+            <li>CAD mockup of shell casing</li>
+            <li>Firmware prep</li>
+            <li>Weekly videos WIP</li>
           </ul>
         </ul>
       </div>
@@ -501,6 +613,8 @@
         <ul>
           <li>Modify enlarge functionality of empathy map and GIF for mobile-friendly experience</li>
           <li>Add new images to document the project.</li>
+          <li>Site becoming longer. Consider construction of a side-nav bar for link reachability</li>
+          <li>Lower the background resolution to speed up the website's loading time</li>
           <li>mySQL skeleton prepped. Populate with tables when/if needed.</li>
           <li>Have some fun!</li>
         </ul>
