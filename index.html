@@ -17,7 +17,8 @@
       <title id="Title">PlantPal</title>
     </head>
 
-    <body onload="document.body.style.opacity='1'">
+    <body>
+      <!-- onload="document.body.style.opacity='1'" -->
 
       <div class="header-background">
         <div class="title-container">
@@ -27,7 +28,7 @@
           <div class="flex-container-horizontal">
             <a href="#Overview">About</a>
             <a href="#Logistics">Logistics</a>
-            <a href="#Wk. 7 Update">Latest (Wk. 7)</a>
+            <a href="#Wk. 9 Update">Latest (Wk. 9)</a>
             <a href="#Next">WIPs...</a>
           </div>
         </div>
@@ -266,7 +267,7 @@
 
       </div>
 
-      <div class="horizontal-line"><mark>Week 4 Update - "Usability" and Empathy Map</mark></div>
+      <div class="horizontal-line"><mark>Week 5 Update - "Usability" and Empathy Map</mark></div>
 
       <div class="zoom">
         <img src="/images/board-progress.PNG">
@@ -298,7 +299,7 @@
         <img src="/images/wk4-version-video.gif">
       </div>
 
-      <div class="horizontal-line" id="Wk. 5 Update"><mark>Wk. 5 - Principles of UI Design</mark></div>
+      <div class="horizontal-line" id="Wk. 6 Update"><mark>Wk. 6 - Principles of UI Design</mark></div>
       <div class="ui-container">
         <div class="ui-child">
           <img src="/images/steering-wheels.jpg">
@@ -336,7 +337,7 @@
         </div>
       </div>
 
-      <div class="horizontal-line" id="Wk. 6 Update"><mark>Wk. 6 - Product I.A.</mark></div>
+      <div class="horizontal-line" id="Wk. 7 Update"><mark>Wk. 7 - Product I.A.</mark></div>
       <div class="ui-container">
         <div class="ui-child">
           <h2>User's First Interaction</h2>
@@ -393,7 +394,7 @@
         </div>
       </div>
 
-      <div class="horizontal-line" id="Wk. 7 Update"><mark>Wk. 7 - Interaction Design</mark></div>
+      <div class="horizontal-line" id="Wk. 8 Update"><mark>Wk. 8 - Interaction Design</mark></div>
       <div class="row">
         <div class="product-column">
           <h1>Features vs. Benefits</h1>
@@ -495,6 +496,57 @@
           </p>
       </div>
 
+      <div class="horizontal-line" id="Wk. 9 Update"><mark>Wk. 9 - Revenue Model</mark></div>
+      <div class="row">
+        <div class="product-column">
+          <h1>Costs</h1>
+          <p>
+            After consideration, our team would like to introduce a subscription model to our product. Before, describing its revenue, we should first
+            elaborate on the costs that result from this decision. For users that wish to opt into the subscription service, our product would require a cloud/database
+            in which we would rely on Microsoft Azure for an SQL database. This platform provides self-sustaining scalability as we expect the product's traffic to grow over time.
+            Based on the several many types of pricing models that Azure possesses, we'd estimate our database to cost about $5,000 per month; this price 
+            keeps in mind the greater limit in expenses as the product scales in the later years of PlantPal's lifespan. The app would only need a small 
+            team of roughly 4 lead app developers (at most) given the simplicity of data to be handled. Labor costs could be $200k.
+          </p>
+          <p>
+            Once production of the hardware for our meters are scaled, we can expect the raw costs of our products to be around $10 for the PCB (hardware) with sensors 
+            and $0.15 for each of the customizable, attachable domes. The $10 cost estimation includes the PCB itself at $5 and additional components at $4.50 
+            (in which we bump up the estimation by $0.50). Manufacturing the devices requires little labor if automated (taking up to 20 minutes for a single device).
+          </p>
+
+          <h1>Revenue</h1>
+          <p>
+            Our product will be sold as a one-time purchase at hardware retailers such as Home Depot or Lowes. 
+            We will also be selling them online through Amazon. PlantPal has an option for mounted, customizable 
+            domes (or "flags") that can be sent to and purchased through these channels. In terms of costs, Hardware stores
+            usually keep 60% from sales profit which leaves us with 40%. On the other hand, Amazon takes about 15% from sales 
+            profit which leaves us with 85%. Based on our research, online sales will account for 20% of all revenue.
+          </p>
+          <p>
+            We hope to sell the sensors for $20 each and the flags in packs of 3 for $2. Hardware stores 
+            usually keep 60% from sales profit which leaves us with 40%. On the other hand, Amazon takes about 15% from sales 
+            profit which leaves us with 85%. Based on our research, online sales will account for 20% of all revenue.
+          </p>
+          <p>
+            Our product comes with a free PlantPal app that reads instantaneous moisture levels, as well as other stats
+            environmental stats such as temperature and light. The app will be ad-free for an improved user experience. 
+            It will use instantaneous data to provide tips and tricks on how to improve plant growth based on the environment's
+            current conditions. Users, if interested, can opt into a premium subscription plan that provides improved stat tracking.
+            Unlike the free version, premium will not only present real-time data, but also store data over time. This will 
+            enable our graphical feature implementation that visually depicts plant health over time to provide more accurate 
+            summaries altogether.
+          </p>
+          <p>
+            On average, we will profit $4.90 (49%) per sensor and $0.75 (67%) per pack of flags. Assuming that 100 products are sold daily
+            with 50% of sales including a purchse of a customized dome, we can expect to see around $192,000 in profits annually.
+          </p>
+          <p>
+            We plan to charge $4/month for the premium subscription plan. Assuming 10% of users opt into a premium subscription 
+            plan, we can expect to see ~$172,000 in revenue from the subscriptions alone. In total, this will result in 
+            profits of ~$360,000 annually (assuming this is the revenue from our launching year).
+          </p>          
+        </div>
+      </div>
 
       <div class="horizontal-line" id="Logistics"><mark>Logistics & Weekly Summaries</mark></div>
 
@@ -592,12 +644,22 @@
           </ul>
         </ul>
         <ul>
-          <b>Week 8 - Upcoming</b>
+          <b>Week 8</b>
           <ul>
             <li>SwiftUI skeleton development</li>
             <li>Hardware parts ordered/en-route</li>
             <li>CAD mockup of shell casing</li>
             <li>Firmware prep</li>
+            <li>Weekly videos completed</li>
+          </ul>
+        </ul>
+        <ul>
+          <b>Week 9 - in progress</b>
+          <ul>
+            <li>SwiftUI skeleton - reorganized</li>
+            <li>UIOnboarding WIP</li>
+            <li>Hardware parts ordered & arrived</li>
+            <li>Hardware debugging WIP</li>
             <li>Weekly videos WIP</li>
           </ul>
         </ul>
