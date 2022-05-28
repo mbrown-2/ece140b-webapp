@@ -8,7 +8,7 @@
     border-radius: 15px;
     margin-left: auto;
     margin-right: auto;
-    width: 95%;
+    width: 98%;
     flex-direction: column;
 
     grid-gap: 1rem;
@@ -36,5 +36,6 @@
 }
 .ui-child > p {
    padding: 20px;
+   text-align: left;
 }
 
